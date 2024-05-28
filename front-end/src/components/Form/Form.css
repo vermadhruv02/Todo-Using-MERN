@@ -1,0 +1,26 @@
+.form{
+    margin-top: 5rem;
+}
+
+.innerForm{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* border: 1px solid #000; */
+}
+
+.innerForm input{
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    /* box-shadow: 10px; */
+    box-shadow: 10px 5px 5px grey;
+
+}
+.innerForm input[type=submit]{
+    background-color: lightgreen;
+    cursor: pointer;
+}
