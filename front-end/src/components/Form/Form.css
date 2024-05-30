@@ -17,10 +17,11 @@
     border-radius: 20px;
     border: 1px solid grey;
     /* box-shadow: 10px; */
-    box-shadow: 10px 5px 5px grey;
+    box-shadow: 10px 5px 5px #B7B597;
 
 }
 .innerForm input[type=submit]{
-    background-color: lightgreen;
+    background-color: #DAD3BE ;
+    /* lightgreen; */
     cursor: pointer;
-}
+}   
