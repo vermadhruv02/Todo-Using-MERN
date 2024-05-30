@@ -5,7 +5,7 @@ import axios from "axios";
 
 function Task() {
 
-  const url = "http://localhost:3000";
+  const url = "https://todo-using-mern-backend.onrender.com" || "http://localhost:3000";
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
