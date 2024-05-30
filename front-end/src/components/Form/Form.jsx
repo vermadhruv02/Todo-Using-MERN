@@ -7,7 +7,7 @@ function Form({displayNewTask} ) {
   const [task, setTask] = useState('');
   const [date, setDate] = useState('');
 
-  const url = 'http://localhost:3000'
+  const url ="https://todo-using-mern-backend.onrender.com" ||  'http://localhost:3000'
   
   const addTask = (e)=>{
     e.preventDefault();
