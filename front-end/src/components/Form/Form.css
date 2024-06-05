@@ -1,27 +1,27 @@
 .form{
-    margin-top: 5rem;
-}
-
-.innerForm{
-    margin: 0;
+    margin-top: 2rem; 
+    /* margin: 2rem; */
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    /* border: 1px solid #000; */
+
+}
+
+.innerForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
 }
 
 .innerForm input{
     font-size: 2rem;
-    padding: 10px;
-    border-radius: 20px;
-    border: 1px solid grey;
-    /* box-shadow: 10px; */
+    padding: 1rem 1rem;
+    border-radius: 3rem;    border: 1px solid grey;
     box-shadow: 10px 5px 5px #B7B597;
 
 }
 .innerForm input[type=submit]{
     background-color: #DAD3BE ;
-    /* lightgreen; */
-    cursor: pointer;
-}   
+    cursor: pointer;}

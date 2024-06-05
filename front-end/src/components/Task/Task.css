@@ -5,41 +5,50 @@
     align-items: center;
     /* border: 1px solid #000; */
 }
-.taskHolder table{
-    width: 60%;
-    /* border: 1px solid #000; */
-    padding: 20px 40px;
+table{
+    width: 75rem;
 }
+
 .taskHolder table tr{
     display: flex;
-    justify-content: space-between;
-    box-shadow: 10px 5px 5px #B7B597;
+    justify-content: space-around;
+    box-shadow: 10px 10px 10px #B7B597;
     background-color: #DAD3BE;
-
-    th{
-        font-size: 40px;
-        width: 300px;
-    }
-
-    td{
-        font-size: 30px;
-        width: 300px;
+    th , td{
+        font-size: 1.8rem;
         display: flex;
         justify-content: center;
-        text-align: center;
-        overflow:auto;        
+        align-items: center;
+        /* background-color: yellow;
+        border: 1px solid white; */
     }
+    
+    th{
+        font-size: 2rem;
+    }
+
+}
+.taskHolder table tr td:nth-child(1) , .taskHolder table tr th:nth-child(1){
+    width: 30rem;
+}
+.taskHolder table tr td:nth-child(2) , .taskHolder table tr th:nth-child(2),
+.taskHolder table tr td:nth-child(3) , .taskHolder table tr th:nth-child(3){
+    width: 14rem;
+}
+.taskHolder table tr td:nth-child(4) , .taskHolder table tr th:nth-child(4),
+.taskHolder table tr td:nth-child(5) , .taskHolder table tr th:nth-child(5){
+    width: 8rem;
 }
 
-.taskHolder table tr:last-child{
+.taskHolder table tbody tr:last-child{
     background-color: #DAD3BE;
     border-radius: 0   0 50px 50px;   
 
 }
-.taskHolder table tr:first-child{
+.taskHolder table thead tr{
     background-color: #6B8A7A;
     border-radius: 50px 50px 0   0; 
-    box-shadow: 10px 5px 5px #B7B597; 
+    box-shadow: 10px 10px 10px #6B8A7A; 
     /* box-shadow: none; */
 }
 
@@ -52,8 +61,15 @@
 .taskHolder table tr td:nth-child(5),.taskHolder table tr td:nth-child(4){
     cursor: pointer;
 }
-.delete {
-    height: 50px;
+.edit svg{
+    height: 3rem;
+    :hover{
+        color: white;
+        fill: white;
+    }
+}
+.delete svg{
+    height: 3rem;
     :hover{
         color: darkred;
     }

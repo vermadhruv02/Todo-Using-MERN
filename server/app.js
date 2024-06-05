@@ -5,7 +5,7 @@ import cors from 'cors';
 import "dotenv/config";
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4001;
 
 app.use(cors());
 app.use(express.json());
@@ -62,6 +62,17 @@ app.delete('/delete/:id',(req,res)=>{
     .catch((err)=>{
         res.json(err);
     })
+});
+
+app.put('/update/:id', (req,res)=>{
+  console.log('update req reached');
+  const {id} = req.params;
+  const {task} = req.body;
+  console.log(req.body);
+  TodoModel.findByIdAndUpdate(id, {$set: {task: task}})
+  .then(res => {console.log(`updated res: ${res}`);})
+  .catch(err => {console.log(`updated err: ${err}`);})
+
 });
 
 app.listen(PORT, () => {
