@@ -12,7 +12,7 @@ table{
 .taskHolder table tr{
     display: flex;
     justify-content: space-around;
-    box-shadow: 10px 10px 10px #B7B597;
+    box-shadow: 5px 5px 20px #B7B597;
     background-color: #DAD3BE;
     th , td{
         font-size: 1.8rem;
@@ -42,13 +42,13 @@ table{
 
 .taskHolder table tbody tr:last-child{
     background-color: #DAD3BE;
-    border-radius: 0   0 50px 50px;   
+    border-radius: 0   0 10px 10px;   
 
 }
 .taskHolder table thead tr{
     background-color: #6B8A7A;
-    border-radius: 50px 50px 0   0; 
-    box-shadow: 10px 10px 10px #6B8A7A; 
+    border-radius: 10px 10px 0   0; 
+    box-shadow: 5px 5px 20px #6B8A7A; 
     /* box-shadow: none; */
 }
 
@@ -74,3 +74,32 @@ table{
         color: darkred;
     }
 }
+
+@media (max-width: 768px) {
+    .task {
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    *{
+      font-size: 0.4rem;
+    }
+    .task {
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+    }
+    .taskHolder table tr td:nth-child(1) , .taskHolder table tr th:nth-child(1){
+      width: 18rem;
+    }
+    .taskHolder table tr td:nth-child(2) , .taskHolder table tr th:nth-child(2),
+    .taskHolder table tr td:nth-child(3) , .taskHolder table tr th:nth-child(3){
+      width: 12rem;
+      /* font-size: 1.5rem; */
+    }
+    .taskHolder table tr td:nth-child(4) , .taskHolder table tr th:nth-child(4),
+    .taskHolder table tr td:nth-child(5) , .taskHolder table tr th:nth-child(5){
+      width: 8rem;
+    }
+  }
