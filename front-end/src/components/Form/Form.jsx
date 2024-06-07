@@ -28,7 +28,7 @@ function Form({displayNewTask} ) {
     <div className='form'>
         <form>
           <div className="innerForm">
-            <input type="text" placeholder='task'  value={task} onChange={(e)=>{setTask(e.target.value)}} required/>
+            <input type="text" placeholder='Task'  value={task} onChange={(e)=>{setTask(e.target.value)}} required/>
             <input type="date" value={date} onChange={(e)=>{setDate(e.target.value)}} required/>
             <input type="submit" value="Add Task" onClick={addTask}/>
             </div>
